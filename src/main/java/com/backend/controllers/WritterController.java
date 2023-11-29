@@ -33,7 +33,7 @@ public class WritterController {
         return ResponseEntity.ok(writterDtos);
     }
     @PostMapping("/writter")
-    public ResponseEntity<WritterDto> createRecipe(@RequestBody WritterDto dto){
+    public ResponseEntity<WritterDto> createWritter(@RequestBody WritterDto dto){
         return ResponseEntity.ok(writterMapper.toDto(writterService.createWritter(writterMapper.toEntity(dto))));
     }
 

@@ -25,7 +25,6 @@ public class WritterService {
     public Writter getWritterById(Long id) {
         return writterRepository.findById(id).orElse(null);
     }
-
     public Writter updateWritter(Long id, Writter writter){
         Writter writerToBeUpdated = getWritterById(id);
         if (writerToBeUpdated != null){
@@ -39,8 +38,6 @@ public class WritterService {
         }
         return null;
     }
-
-
     public void deleteWritter(long id) {
         Writter writter= getWritterById(id);
         if (writter != null){

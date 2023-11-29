@@ -5,7 +5,6 @@ import com.backend.models.Writter;
 import org.springframework.stereotype.Component;
 @Component
 public class WritterMapper {
-
     public WritterDto toDto(Writter writter){
         WritterDto dto = new WritterDto();
         dto.setId(writter.getId());
